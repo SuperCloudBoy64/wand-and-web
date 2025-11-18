@@ -348,7 +348,7 @@ body.dark-mode .header::after {
 }
 
 body.dark-mode .heroPic {
-  background: url('darkHero1.png');
+  background: url('darkHero1.jpeg');
   background-size: contain;
   height: 60vh;
   width: 80vw;
@@ -1292,6 +1292,7 @@ body.dark-mode .heroPic::after {
   font-weight: bold;
   padding: 1rem;
 }
+
 
 
 
