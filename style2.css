@@ -439,7 +439,8 @@ body.dark-mode .heroPic::after {
   display: grid;
   gap: 3rem;
   justify-content: center;   
-  grid-template-columns: 1fr; 
+  grid-template-columns: repeat(3, 1fr);
+    max-width: calc(3 * 220px + 2 * 3rem);
   margin: 0 auto;
 }
 
@@ -1372,3 +1373,4 @@ body.dark-mode .portfolio{
 
 
 }
+
