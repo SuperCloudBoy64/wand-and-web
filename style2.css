@@ -971,6 +971,32 @@ body.dark-mode .portfolio{
   border: 2px solid #333;
 }
 
+.button {
+  position: relative;
+  text-decoration: none;
+  padding: 4px 16px;
+  color: white;
+  background: linear-gradient(to right, midnightblue 0%, cyan 100%);
+  background-size: 600% auto;
+  text-align: center;
+  display: inline-block;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius:  16px;
+  cursor: pointer;
+  transition: background-position 0.5s ease, color 0.5s ease, transform 0.3s ease;
+  margin: 2.5% 5%;
+  z-index: 5; 
+}
+
+.button:hover {
+  background-position: right center;
+  color: black;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transform: scale(1.02);
+   z-index: 5; 
+}
+
 
 
 
