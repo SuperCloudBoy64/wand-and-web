@@ -1291,7 +1291,7 @@ body.dark-mode .portfolio{
 .portfolioH3 {
   font-weight: bold;
   font-size: 2rem;
-  max-width: 100%;
+  max-width: 90%;
   margin-top: 10%;
   padding: 1rem;
 }
@@ -1335,11 +1335,12 @@ body.dark-mode .portfolio{
 }
 
 .project h3 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  max-width: 90%;
 }
 
 .project p{
-  font-size: 1.2rem; 
+  font-size: 1.1rem; 
   max-width: 75%;
   font-weight: bold;
   padding: 1rem;
