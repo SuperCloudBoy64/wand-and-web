@@ -25,7 +25,7 @@ body.dark-mode {
   cursor: pointer;
   transition: background-position 0.5s ease, color 0.5s ease, transform 0.3s ease;
   margin: 5% 10%;
-  z-index: 5; /* sits above skeleton */
+  z-index: 5; 
 }
 
 .button:hover {
@@ -33,6 +33,7 @@ body.dark-mode {
   color: black;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   transform: scale(1.03);
+   z-index: 5; 
 }
 
 
@@ -242,39 +243,26 @@ body.dark-mode .header::after {
 }
 
 .contact {
-  background: GreenYellow;
+  background: cadetblue;
   color: #000;
   border: 2px solid #333;
   border-radius: 4em;
   padding: 10px 20px;
   font-weight: bold;
-  transition:
-  transform 400ms cubic-bezier(.22,1,.36,1),
-    box-shadow 300ms ease,
-    color 300ms ease,
-    border-color 300ms ease,
-    background-color 400ms ease,
-    padding-right 0.4s ease,
-    border 0.4s ease;
-  transform-origin: left center;
-  display: inline-block;
   text-align: center;
   cursor: pointer;
-  will-change: transform;
   backface-visibility: hidden;
-  transform: scaleX(1) translateY(0); 
 }
 
-.contact:hover { 
-  transform: scaleX(1.18) translateY(-1px); 
-  box-shadow: 0 6px 14px rgba(0,0,0,.15);
+.contact:hover {
+  transform: none;
+  box-shadow: none;
   background: cadetblue;
-  background-size: 100% 200%;
-  background-position: 0 100%;
-  animation: rise 0.8s ease forwards;
-  padding-right: 60px;
-  border: 5px solid darkgray;
-  
+  background-size: initial;
+  background-position: initial;
+  animation: none;
+  padding-right: 20px;
+  border: 2px solid #333;
 }
 
 .contact::after {
@@ -960,6 +948,31 @@ body.dark-mode .portfolio{
   display: none;
 }
 
+.contact {
+  background: cadetblue;
+  color: #000;
+  border: 2px solid #333;
+  border-radius: 4em;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  backface-visibility: hidden;
+}
+
+.contact:hover {
+  transform: none;
+  box-shadow: none;
+  background: cadetblue;
+  background-size: initial;
+  background-position: initial;
+  animation: none;
+  padding-right: 20px;
+  border: 2px solid #333;
+}
+
+
+
 
 
 
@@ -1075,6 +1088,8 @@ body.dark-mode .portfolio{
   grid-template-columns: 1fr; 
   width: fit-content;
   margin: 20px auto;
+    max-width: calc(2 * 120px + 1 * 3rem); 
+    margin: 0 auto;
 }
 
 
@@ -1109,21 +1124,8 @@ body.dark-mode .portfolio{
 }
 
 
-@media (min-width: 700px) {
-  .selector {
-    grid-template-columns: repeat(2, 1fr);
-    max-width: calc(2 * 220px + 1 * 3rem); 
-    margin: 0 auto;
-  }
-}
 
 
-@media (min-width: 1000px) {
-  .selector {
-    grid-template-columns: repeat(3, 1fr);
-    max-width: calc(3 * 220px + 2 * 3rem);
-  }
-}
 
 
 .sIcon {
