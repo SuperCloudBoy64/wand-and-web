@@ -895,7 +895,370 @@ body.dark-mode .portfolio{
 
 
 
-@media screen and (max-width: 750px) {
+
+@media only screen and (min-width: 81px) and (max-width: 1600px) {
+  
+
+  .hero{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.heroPic {
+  background: url('hero1.png') center/cover no-repeat;
+  background-size: 100% auto;
+  width: 100%;
+  max-width: 100%;
+  justify-content: center;
+  z-index: 0;
+  margin-top: 1vh;
+  margin-bottom: 15%;
+  padding: 0;
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  margin-top: -15vh;
+}
+
+.hero h1 {
+  font-weight: bold;
+  font-size: 9vw;
+  text-align: center;
+  margin: 20px;
+}
+
+.hero h2 {
+  font-weight: bold;
+  font-size: 4vw;
+  margin: 20px;
+  text-align: center;
+}
+
+.hero p {
+  width: 80%;
+  font-size: 3vw;
+  margin: 30px;
+  text-align: center;
+}
+
+.hero-button {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sHead {
+  text-align: center;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.sHead h2{
+  font-size: 8vw;
+  margin-top: 15%;
+  border: 2px solid black;
+  border-radius: 2rem;
+  background-color: lavenderBlush;
+  max-width: 90%; 
+}
+
+.sHead h3{
+  font-size: 4vw;
+  font-weight: bold;
+  max-width: 100%;
+  margin-top: 5%;
+  margin-bottom: 2rem;
+}
+
+.sHead p{
+  max-width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 2vw;
+  padding-bottom: 6rem;
+  margin-top: 5%;
+}
+
+.selector {
+  display: grid;
+  gap: 4rem;
+  justify-content: center;   
+  grid-template-columns: repeat(2, auto); 
+  width: fit-content;
+  margin: 20px auto;
+  max-width: calc(2 * 120px + 1 * 1rem); 
+}
+
+
+.selector a:hover {
+  cursor: pointer;
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), 
+    url('pumpkin.png');                                
+  background-color: mistyrose;                        
+  background-position: center left;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transform: scale(1.05);
+}
+
+.selector a:hover .sButton {
+  color: white;
+}
+
+.selector h3 {
+  font-size: 2rem;
+}
+
+.selector p {
+  font-size: 1.2rem;
+  max-width: 90%;
+  padding-bottom: 15px;
+  
+}
+
+
+
+
+
+
+.sIcon {
+  position: absolute;
+  top: -3rem;
+  left: 1rem;
+
+  width: 2rem;
+  height: 2rem;
+  font-size: 2.25rem;
+  padding: 1.5rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+   display: flex;               
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: navy;
+}
+
+.selector a:hover .sIcon {
+  color: black;
+  background-color: dodgerblue;
+  border-color: dodgerblue; 
+}
+
+.selectorButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 15%;
+  margin: 15% auto;
+}
+
+
+
+
+.sButton::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  background: dodgerblue;
+  z-index: 0;
+  transition: height 0.4s ease;
+  border-radius: inherit;
+  pointer-events: none;
+  will-change: height;
+}
+
+
+.sButton {
+  display: inline-block;
+  background: transparent;
+  border: none;
+  padding: 6px 40px;
+  border-radius: 12px;
+  transition: 
+  background-color 0.3s ease,
+  box-shadow 0.3s ease,
+  max-height 0.3s ease,
+  opacity 0.3s ease,
+  transform 0.3s ease,
+  padding 0.3s ease;
+  align-self: flex-start;   
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: underline;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.sButton > * {
+  position: relative;
+  z-index: 1;
+}
+
+.sButton:hover::before {
+  height: 100%;
+}
+
+.sButton:hover {
+  color: black;                        
+  box-shadow: 0 0 10px rgba(30,144,255,.6);
+}
+
+.sButton span {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.portfolio {
+  background-color: linen;
+  text-align: center;
+}
+
+.portfolio1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 100%;
+  
+  
+}
+
+.portfolioH2 {
+  text-align: center;
+  font-size: 12vw;
+  margin: 5% auto;
+  border: 2px solid black;
+  border-radius: 1rem;
+  background-color: lavenderBlush;
+  padding: 1rem;
+}
+
+.portfolioH3 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  max-width: 90%;
+  margin-top: 10%;
+  padding: 1rem;
+}
+
+.portfolioP {
+  font-size: 1.2rem;
+  max-width: 90%;
+  font-weight: bold;
+  margin-bottom: 10%;
+}
+
+
+
+.portfolio2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+  gap: 2rem;
+  margin-bottom: 20%;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background-position 0.7s , transform 0.4s ease, box-shadow 0.5s ease;
+  margin-bottom: 20%;
+}
+
+.project:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.portfolio2 img {
+  height: auto;
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.project h3 {
+  font-size: 1.3rem;
+  max-width: 90%;
+}
+
+.project p{
+  font-size: 1.2rem; 
+  max-width: 75%;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 850px) {
   body {
   font-family: 'Baskervville', Arial, Helvetica, sans-serif;
   overflow-x: hidden;
@@ -1020,6 +1383,7 @@ body.dark-mode .portfolio{
 
 
 
+
 .hero{
   display: flex;
   flex-direction: column;
@@ -1034,6 +1398,7 @@ body.dark-mode .portfolio{
   justify-content: center;
   z-index: 0;
   margin-top: -15vh;
+  margin-bottom: 10%;
   padding: 0;
 }
 
@@ -1398,6 +1763,7 @@ body.dark-mode .portfolio{
   align-items: center;
   justify-items: center;
   font-size: 2rem;
+  margin-bottom: 40px;
 }
 
 
