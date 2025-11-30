@@ -11,7 +11,7 @@ body.dark-mode {
 }
 
 .button {
-  position: relative; /* needed so we can position the skeleton relative to this */
+  position: relative;
   text-decoration: none;
   padding: 16px 64px;
   color: white;
@@ -25,7 +25,8 @@ body.dark-mode {
   cursor: pointer;
   transition: background-position 0.5s ease, color 0.5s ease, transform 0.3s ease;
   margin: 5% 10%;
-  z-index: 5; 
+  z-index: 0; 
+  isolation: isolate;
 }
 
 .button:hover {
@@ -33,14 +34,14 @@ body.dark-mode {
   color: black;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   transform: scale(1.03);
-   z-index: 5; 
+   z-index: 0; 
 }
 
 
 body.dark-mode .button::after {
   content: "";
   position: absolute;
-  top: 100%; /* start below the button */
+  top: 100%; 
   left: 50%;
   transform: translateX(-50%) translateY(0);
   width: 120%;
@@ -50,7 +51,7 @@ body.dark-mode .button::after {
   background-size: contain;
   background-repeat: no-repeat;
   opacity: 0;
-  z-index: 1; /* below the button */
+  z-index: 2; 
   transition: opacity 0.9s ease-in-out, transform 0.7s ease;
 }
 
@@ -113,6 +114,7 @@ body.dark-mode .button:hover::after {
   justify-items: center;
   font-size: 2rem;
 }
+
 
 
 
@@ -408,11 +410,11 @@ body.dark-mode .heroPic::after {
 }
 
 .sHead h2{
-  font-size: 1.5rem;
+  font-size: 6rem;
 }
 
 .sHead h3{
-  font-size: 4rem;
+  font-size: 2.5rem;
   font-weight: bold;
 }
 
@@ -421,6 +423,7 @@ body.dark-mode .heroPic::after {
   text-align: center;
   margin: 0 auto;
   font-size: 1.1rem;
+  padding-bottom: 2%;
 }
 
 .selector {
@@ -1600,6 +1603,7 @@ body.dark-mode .portfolio{
   overflow: hidden;
   position: relative;
   z-index: 1;
+  margin: 5%;
 }
 
 .sButton > * {
